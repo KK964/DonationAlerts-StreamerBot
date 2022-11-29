@@ -37,8 +37,6 @@ app.get('/auth/donationalerts', async (req, res) => {
 
   const json = await getAccessToken(code);
 
-  console.log(json);
-
   const query = new URLSearchParams({
     response: JSON.stringify(json),
   });
